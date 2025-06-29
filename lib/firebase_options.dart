@@ -41,46 +41,46 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAzjpIE7ersInzWFMWLX3rs5UrcLSqSNJw',
-    appId: '1:370831177284:web:91d622963826e94d02ee11',
-    messagingSenderId: '370831177284',
-    projectId: 'dailyplanner-ceb29',
-    authDomain: 'dailyplanner-ceb29.firebaseapp.com',
-    storageBucket: 'dailyplanner-ceb29.firebasestorage.app',
+    apiKey: 'AIzaSyBlY2AVQ5aSWb59m4eY5-zjzf_ql1fRMDY',
+    appId: '1:646644569125:android:69c278a812e66bc29c9bcc',
+    messagingSenderId: '646644569125',
+    projectId: 'mood-journal-26002',
+    authDomain: 'mood-journal-26002.firebaseapp.com',
+    storageBucket: 'mood-journal-26002.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCDUYuDnI3uai6zEqN5Dx6ZIlVVVilgETg',
-    appId: '1:370831177284:android:218ca133c388fea602ee11',
-    messagingSenderId: '370831177284',
-    projectId: 'dailyplanner-ceb29',
-    storageBucket: 'dailyplanner-ceb29.firebasestorage.app',
+    apiKey: 'AIzaSyBlY2AVQ5aSWb59m4eY5-zjzf_ql1fRMDY',
+    appId: '1:646644569125:android:69c278a812e66bc29c9bcc',
+    messagingSenderId: '646644569125',
+    projectId: 'mood-journal-26002',
+    storageBucket: 'mood-journal-26002.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDyFeoa00ZsXVWxIt-4Z3zFjMNyKhmXOz8',
-    appId: '1:370831177284:ios:7a608d05d9b7655b02ee11',
-    messagingSenderId: '370831177284',
-    projectId: 'dailyplanner-ceb29',
-    storageBucket: 'dailyplanner-ceb29.firebasestorage.app',
-    iosBundleId: 'com.example.dailyplanner',
+    apiKey: 'AIzaSyBlY2AVQ5aSWb59m4eY5-zjzf_ql1fRMDY',
+    appId: '1:646644569125:android:69c278a812e66bc29c9bcc',
+    messagingSenderId: '646644569125',
+    projectId: 'mood-journal-26002',
+    storageBucket: 'mood-journal-26002.firebasestorage.app',
+    iosBundleId: 'com.example.moodjournal',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDyFeoa00ZsXVWxIt-4Z3zFjMNyKhmXOz8',
-    appId: '1:370831177284:ios:7a608d05d9b7655b02ee11',
-    messagingSenderId: '370831177284',
-    projectId: 'dailyplanner-ceb29',
-    storageBucket: 'dailyplanner-ceb29.firebasestorage.app',
-    iosBundleId: 'com.example.dailyplanner',
+    apiKey: 'AIzaSyBlY2AVQ5aSWb59m4eY5-zjzf_ql1fRMDY',
+    appId: '1:646644569125:android:69c278a812e66bc29c9bcc',
+    messagingSenderId: '646644569125',
+    projectId: 'mood-journal-26002',
+    storageBucket: 'mood-journal-26002.firebasestorage.app',
+    iosBundleId: 'com.example.moodjournal',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyAzjpIE7ersInzWFMWLX3rs5UrcLSqSNJw',
-    appId: '1:370831177284:web:d7c207607980043702ee11',
-    messagingSenderId: '370831177284',
-    projectId: 'dailyplanner-ceb29',
-    authDomain: 'dailyplanner-ceb29.firebaseapp.com',
-    storageBucket: 'dailyplanner-ceb29.firebasestorage.app',
+    apiKey: 'AIzaSyBlY2AVQ5aSWb59m4eY5-zjzf_ql1fRMDY',
+    appId: '1:646644569125:android:69c278a812e66bc29c9bcc',
+    messagingSenderId: '646644569125',
+    projectId: 'mood-journal-26002',
+    authDomain: 'mood-journal-26002.firebaseapp.com',
+    storageBucket: 'mood-journal-26002.firebasestorage.app',
   );
 }

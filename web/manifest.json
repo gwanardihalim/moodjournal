@@ -1,6 +1,6 @@
 {
-    "name": "dailyplanner",
-    "short_name": "dailyplanner",
+    "name": "moodjournal",
+    "short_name": "moodjournal",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

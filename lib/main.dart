@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:moodjournal/screens/add_moodjournal_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'firebase_options.dart';
 
 import 'screens/auth_gate.dart';
 import 'screens/login_screen.dart';
 import 'screens/register_screen.dart';
-import 'screens/add_planner_screen.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const AuthGate(),
         '/login': (context) => const LoginScreen(),
         '/register': (context) => const RegisterScreen(),
-        '/add': (context) => const AddPlannerScreen(),
+        '/add': (context) => const AddMoodJournalScreen(),
       },
     );
   }
