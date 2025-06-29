@@ -101,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text(
-          'Daily Planner',
+          'Mood Journal',
           style: GoogleFonts.poppins(color: Colors.white),
         ),
         centerTitle: true,
@@ -119,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: plans.isEmpty
           ? Center(
               child: Text(
-                'Belum ada kegiatan',
+                'Belum ada mood',
                 style: GoogleFonts.poppins(color: Colors.grey),
               ),
             )

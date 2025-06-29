@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.dailyplanner"
+    namespace = "com.example.moodjournal"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = "27.0.12077973"
 
@@ -20,7 +20,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.dailyplanner"
+        applicationId = "com.example.moodjournal"
         minSdk = 23
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

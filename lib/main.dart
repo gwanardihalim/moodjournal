@@ -1,33 +1,41 @@
-import 'package:dailyplanner/screens/add_planner_screen.dart';
-import 'package:dailyplanner/screens/auth_gate.dart';
-import 'package:dailyplanner/screens/login_screen.dart';
-import 'package:dailyplanner/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'firebase_options.dart';
+
+import 'screens/auth_gate.dart';
+import 'screens/login_screen.dart';
+import 'screens/register_screen.dart';
+import 'screens/add_planner_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(const MyApp());
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  final prefs = await SharedPreferences.getInstance();
+  final seenGetStarted = prefs.getBool('seen_get_started') ?? false;
+
+  runApp(MyApp(showGetStarted: !seenGetStarted));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final bool showGetStarted;
+  const MyApp({super.key, required this.showGetStarted});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Daily Planner',
+      title: 'Mood Journal',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Colors.black,
         textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
-        colorScheme: ColorScheme.dark(
-          primary: Colors.amber,
-        ),
+        colorScheme: const ColorScheme.dark(primary: Colors.amber),
       ),
-      initialRoute: '/',
+      initialRoute: showGetStarted ? '/get-started' : '/',
       routes: {
         '/': (context) => const AuthGate(),
         '/login': (context) => const LoginScreen(),
